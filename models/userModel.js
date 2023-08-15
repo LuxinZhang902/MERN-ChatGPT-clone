@@ -60,9 +60,9 @@ userSchema.methods.getSignedToken = function(res){
     res.cookie('refreshToken', `${refreshToken}`, {
         maxAge:86400 * 7000, 
         httpOnly:true,
-    });
+    }); 
 };
 
-const User = mongoose.model('User', userSchema)
+const User = mongoose.model('User', userSchema);
 
 modeule.export = User;
