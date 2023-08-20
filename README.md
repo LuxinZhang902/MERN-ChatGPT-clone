@@ -33,3 +33,10 @@ npm run dev
 #.env file
 MONGO_URI = mongodb+srv://luxin:chat-gpt@cluster0.yzdddbq.mongodb.net/chatgpt
 ```
+
+# ChatGPT api-key
+
+```python
+npm i openai
+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
+```
