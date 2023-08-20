@@ -1,7 +1,8 @@
 # Step
+
 ```python
 npm init
-npm i express mongoose dotenv morgan cors body-parser colors 
+npm i express mongoose dotenv morgan cors body-parser colors
 
 
 node server.js
@@ -18,12 +19,17 @@ npm start
 
 
 npm i bcryptjs jsonwebtoken cookie
+npm i concurrently
+
+npm run dev
 ```
+
 ## Database Connection (Mongodb)
+
 1. username: luxin
 2. password: chat-gpt
+
 ```python
 #.env file
 MONGO_URI = mongodb+srv://luxin:chat-gpt@cluster0.yzdddbq.mongodb.net/chatgpt
 ```
-

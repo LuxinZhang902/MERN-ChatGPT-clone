@@ -1,12 +1,15 @@
 {
   "name": "mern-stack-chatgpt-clone",
   "version": "1.0.0",
+  "proxy": "http://localhost:8081",
   "description": "ChatGPT clone",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Luxin",
   "license": "MIT",
@@ -14,6 +17,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "colors": "^1.4.0",
+    "concurrently": "^8.2.0",
     "cookie": "^0.5.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",

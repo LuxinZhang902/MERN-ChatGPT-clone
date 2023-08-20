@@ -1,9 +1,21 @@
 import './App.css';
+import {Routes, Route} from 'react-router-dom'
+import Navbar from './components/Navbar';
+import Homepage from './pages/Homepage';
+import Register from './pages/Register';
+import Login from './pages/Login';
 
 function App() {
   return (
     <div>
-      <h1>Welcome to Luxin's Chat GPT Clone</h1>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Homepage/>} />
+        <Route path='/register' element={<Register/>} />
+        <Route path='/login' element={<Login/>} />
+
+        </Routes>
+     
     </div>
   );
 }
