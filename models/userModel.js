@@ -65,4 +65,4 @@ userSchema.methods.getSignedToken = function(res){
 
 const User = mongoose.model('User', userSchema);
 
-modeule.export = User;
+module.export = User;
