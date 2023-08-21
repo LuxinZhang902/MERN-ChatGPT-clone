@@ -9,11 +9,11 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_SECRET // You need to set this environment variable
 });
 
+//Old version OpenAI
 // const {Configuration, OpenAIApi} = require("openai");
 // const configuration = new OpenAIApi({
 //     apiKey: process.env.OPENAI_API_SECRET,
 // });
-
 // const openai = new OpenAIApi(configuration);
 
 exports.summaryController = async(req, res) => {
@@ -24,7 +24,7 @@ exports.summaryController = async(req, res) => {
             prompt: `Summarize this \n${text}`,
             max_tokens: 500,
             temperature: 0.5,
-        })
+        });
         if(data){
             if(data.choices[0].text){
                 return res.status(200).json(data.choices[0].text);
