@@ -22,6 +22,10 @@ npm i bcryptjs jsonwebtoken cookie
 npm i concurrently
 
 npm run dev
+npm install react-hot-toast
+
+cd ./client
+npm i react-hot-toast
 ```
 
 ## Database Connection (Mongodb)
