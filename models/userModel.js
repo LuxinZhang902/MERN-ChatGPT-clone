@@ -50,7 +50,7 @@ userSchema.methods.getSignedToken = function(res){
     const accessToken = JWT.sign(
         { id:this._id }, 
         process.env.JWT_ACCESS_SECRET, 
-        { expiresIn:JWT_ACCESS_EXPIREIN }
+        { expiresIn: process.env.JWT_ACCESS_EXPIREIN }
     );
     const refreshToken = JWT.sign(
         { id:this._id }, 

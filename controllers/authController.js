@@ -21,7 +21,7 @@ exports.registerController = async (req, res, next) => {
             return next(new errorResponse('The email has already been registered', 500))
         }
         const user = await userModel.create({username, email, password})
-        sendToken(user, 201, res)
+        this.sendToken(user, 201, res)
     } catch(error){
         console.log(error)
         next(error)
